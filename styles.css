@@ -105,16 +105,11 @@ a:hover {
   color: #ffab40;
 }
 #errorDisplay {
-  position: absolute;
-  background: #fcc;
-  color: red;
-  display: flex;
-  width: 500px;
-  left: 50%;
-  top: calc(50% + 180px);
-  transform: translate(-50%, 0%);
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.25);
-  user-select: none;
-  padding: 20px;
-  display: none;
-}
+    background: #fcc;
+    color: red;
+    padding: 10px;
+    display: none;
+    text-align: center;
+    border-radius: 5px;
+  }
+  

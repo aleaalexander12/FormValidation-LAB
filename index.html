@@ -8,7 +8,7 @@
       src="https://kit.fontawesome.com/d8f052c6cf.js"
       crossorigin="anonymous"
     ></script>
-    <script type="text/javascript" src="src/index.js"></script>
+    <script src="index.js"defer></script>
   </head>
   <body>
     <!-- Container for entire form. -->
@@ -20,21 +20,17 @@
 
         <!-- Registration Form -->
         <form id="registration">
-          <input name="username" type="text" placeholder="Username" />
+            <input name="username" type="text" placeholder="Username" required minlength="4" pattern="^(?!.*[^\w]).{4,}$" />
           <span class="input-icon"><i class="fa-solid fa-user"></i></span><br />
 
-          <input name="email" type="text" placeholder="Email" />
+          <input name="email" type="email" placeholder="Email" required />
           <span class="input-icon"><i class="fa-solid fa-envelope"></i></span
           ><br />
 
-          <input name="password" type="text" placeholder="Password" />
+          <input name="password" type="password" placeholder="Password" required minlength="12" />
           <span class="input-icon"><i class="fa-solid fa-key"></i></span><br />
 
-          <input
-            name="passwordCheck"
-            type="text"
-            placeholder="Repeat Password"
-          />
+          <input name="passwordCheck" type="password" placeholder="Repeat Password" required />
           <span class="input-icon"><i class="fa-solid fa-key"></i></span
           ><br /><br />
 
